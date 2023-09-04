@@ -1,0 +1,71 @@
+ /* selectors:
+ name tag, 
+ class ---> .top-nav  [class="top-nav"], 
+ id --->   #top-header  [id="top-header"]
+ 
+ */
+
+ body {
+    direction: rtl;
+    margin: 0;
+}
+
+header {
+    height: 170px;
+    background-color: dodgerblue;
+}
+
+.t-header{
+    display: flex;
+    height: 70px;
+    background-color: aquamarine;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.right-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 1.25rem;
+}
+.search-box{
+    background: #f1f2f4;
+}
+
+.search-box input{
+    background: #f1f2f4;
+    border: none;
+    padding: 1rem;
+    padding-right: 3.5rem;
+}
+.left-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    height: 40px;
+    background-color: blueviolet;
+}
+
+section {
+    height: 60px;
+    background-color: red;
+}
+
+main {
+    background-color: pink;
+    height: 700px;
+}
+
+footer {
+    background-color: gray;
+    height: 300px;
+}
+
+
+
+
