@@ -1,0 +1,26 @@
+git branch همه برنچ ها
+git branch Zahra    ایجاد برنج جدید
+git branch -M Zahra برنج اصلی
+
+git remote add origin https://github.com/yazdani23/ms_nayebi_tabatabai.git
+
+git push -u origin main
+
+
+git clone https://github.com/yazdani23/ms_nayebi_tabatabai.git
+
+
+git merge
+
+
+
+
+/////////////////
+
+git add . 
+git commit -m "learning2"
+git push
+
+git pull
+
+//////////////////
