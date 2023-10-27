@@ -45,20 +45,59 @@ padding:
  -->
 
 
- <!-- 
+<!-- 
   position:
+   
+  static:
+  relative: شبیه استاتیک
+   ولی top , right, bottom , left میگیره
+             نسبت به مکان قبلی استاتیک 
+
+  absolute: فضای اشغال شده را رها میکند و در صفحه معلق میشه
+            width , height ===> auto
+            top , right, bottom , left  
+            نسبت به اولین والد غیر استاتیک
+
+  fixed: فضای اشغال شده را رها میکند و در صفحه معلق میشه
+            width , height ===> auto
+            top , right, bottom , left  
+                نسبت به body
+
+  sticky:
 
   
   -->
 
 
+  <!-- image
+
+    raster ===> pixel
+    png ===> تعداد رنگ کم بود
+    jpg  ===> تعداد رنگ زیاد یا عکس طبیعی
+
+    jpeg ===> کیفیت پایین
+
+    webp===> فشرده کم حجم با کیفیت مناسب
+
+    vector ===> 
+    svg   ===> xml (icon , logo)
+    ai
+    
+
+   -->
 
 
 
 
-<div id="html">Html</div>
-<div id="css">Css</div>
-<div id="js">Js</div>
+
+
+<div id="grandParent">
+  <div id="parent">
+    <div id="html">Html</div>
+    <div id="css">Css</div>
+    <div id="js">Js</div>
+  </div>
+</div>
 
 <span id="word">word</span>
 <span id="excel">excel</span>
@@ -71,6 +110,18 @@ padding:
 
 
 <style>
+  body{
+    margin: 0;
+  }
+  #grandParent{
+    background-color: #9f9f9f;
+    padding: 25px;
+  }
+  #parent {
+    background-color: #ddd;
+    padding: 40px;
+  }
+
   #html {
     background-color: dodgerblue;
     height: 20px;
@@ -79,8 +130,9 @@ padding:
 
   #css {
     background-color: orange;
-    height: 20px;
-    margin: 10px;
+    height: 40px;
+    width: 100px;
+    position: absolute;
   }
 
   #js {
@@ -108,7 +160,7 @@ padding:
     margin-left: 40px;*/
     /*margin: 10px 20px 30px 40px;*/
     /*margin: 10px 30px;*/
-   /* margin: 20px;*/
-   margin: auto;
+    /* margin: 20px;*/
+    margin: auto;
   }
 </style>
